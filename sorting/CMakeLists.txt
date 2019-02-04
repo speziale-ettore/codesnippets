@@ -1,3 +1,3 @@
 add_executable(sorting
-  insertionsort.cpp)
+  sorting.cpp)
 target_link_libraries(sorting gtest_main)
