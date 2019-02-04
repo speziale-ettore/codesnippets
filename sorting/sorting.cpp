@@ -2,6 +2,7 @@
 #include "gtest/gtest.h"
 
 #include "insertionsort.h"
+#include "selectionsort.h"
 #include "utils.h"
 
 using namespace cs;
@@ -36,3 +37,6 @@ TEST_P(Sort, SortLargeRange) {
 INSTANTIATE_TEST_CASE_P(
     Insertion, Sort,
     testing::Values(insertion_sort<std::vector<int>::iterator>));
+INSTANTIATE_TEST_CASE_P(
+    Selection, Sort,
+    testing::Values(selection_sort<std::vector<int>::iterator>));
