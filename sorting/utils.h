@@ -1,4 +1,8 @@
 
+#ifndef __UTILS_H
+#define __UTILS_H
+
+#include <iostream>
 #include <random>
 
 namespace cs {
@@ -13,4 +17,14 @@ make_random_range(size_t n) {
     n = distribution(generator);
   return range;
 }
+
+template <typename It>
+void print_range(It begin, It end) {
+  std::cout << "[";
+  for (auto i = begin, e = end; i != e; ++i)
+    std::cout << (i == begin ? "" : " ") << *i;
+  std::cout << "]" << std::endl;
 }
+}
+
+#endif

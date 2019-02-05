@@ -1,6 +1,7 @@
 
 #include "gtest/gtest.h"
 
+#include "mergesort.h"
 #include "insertionsort.h"
 #include "selectionsort.h"
 #include "utils.h"
@@ -40,3 +41,6 @@ INSTANTIATE_TEST_CASE_P(
 INSTANTIATE_TEST_CASE_P(
     Selection, Sort,
     testing::Values(selection_sort<std::vector<int>::iterator>));
+INSTANTIATE_TEST_CASE_P(
+    Merge, Sort,
+    testing::Values(merge_sort<std::vector<int>::iterator>));

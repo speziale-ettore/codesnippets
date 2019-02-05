@@ -1,4 +1,7 @@
 
+#ifndef __SELECTIONSORT_H
+#define __SELECTIONSORT_H
+
 #include <utility>
 
 namespace cs {
@@ -17,3 +20,5 @@ void selection_sort(It begin, It end) {
     std::swap(*std::min_element(i, end), *i);
 }
 }
+
+#endif

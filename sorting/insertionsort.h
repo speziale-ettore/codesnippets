@@ -1,4 +1,7 @@
 
+#ifndef __INSERTIONSORT_H
+#define __INSERTIONSORT_H
+
 #include <utility>
 
 namespace cs {
@@ -23,3 +26,5 @@ void insertion_sort(It begin, It end) {
   }
 }
 }
+
+#endif
